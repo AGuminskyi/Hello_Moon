@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@drawable/armstrong_on_moon"
+        android:contentDescription="@string/hellomoon_description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:layout_weight="1"/>
+
+    <VideoView
+        android:layout_height="180dp"
+        android:layout_width="match_parent"
+        android:id="@+id/hello_moonVideo"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hello_moonVideoButton"
+        android:text="@string/hellomoon_video"/>
+
+    <TableRow
+        android:layout_weight="0"
+        android:gravity="center|bottom">
+        <Button
+            android:id="@+id/hello_moonStopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hellomoon_stop"/>
+
+        <Button
+            android:id="@+id/hello_moonPauseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hellomoon_pause"/>
+
+        <Button
+            android:id="@+id/hello_moonPlayButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hellomoon_play"/>
+
+    </TableRow>
+
+</TableLayout>
